@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 11px;
+}
+
+body {
+    background: radial-gradient(circle, rgba(245, 245, 245, 0.849) 0%, rgb(0, 0, 0) 100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    height: 16vh;
+    background: linear-gradient(90deg, rgb(25, 24, 36) 0%, rgb(117, 104, 116) 100%, rgb(16, 25, 27) 100%);
+}
+
+/* Menu Superior */
+
+.menuSuperior {
+    background-color: #2e2e2e;
+    font-size: 1.6rem;
+    list-style-type: none;
+    text-align: center;
+}
+
+.menuSuperior li {
+    display: inline-block;
+    padding: 1.5rem;
+}
+
+.menuSuperior a {
+    text-decoration: none;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+/* Contenido */
+
+.secciones {
+    width: 60%;
+    float: left;
+}
+
+.sección {
+    background-color: rgb(229, 218, 250);
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.sección1 {
+    width: 60%;
+    float: left;
+    background-color: rgb(117, 128, 165);
+    margin: 2rem;
+    padding: 2rem;
+}
+
+
+.secciónTinta {
+    padding: 2rem;
+    width: 90%;
+}
+
+/* Botón de la Sección 2 */
+.main_btn {
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    float: right;
+}
+
+.main_btn:hover {
+    background-color: rgb(63, 62, 65);
+}
+
+.main_btn:active {
+    background-color: rgb(79, 79, 85);
+}
+
+/* ----------------------- */
+.Cartuchos {
+    padding: 2rem;
+    float: left;
+    width: 90%;
+}
+
+.secciónCartuchos {
+    text-align: center;
+
+}
+
+.Cartuchos {
+    width: auto;
+}
+
+.infocartuchos {
+    background: rgb(48, 46, 48);
+    font-size: 1.8rem;
+    text-align: center;
+    color: hsl(0, 0%, 0%);
+}
+
+.textCar {
+    margin: 1rem 0rem 1rem 0rem;
+    background-color: #000000;
+    color: rgb(216, 216, 203);
+}
+
+/* Esto seria Informacion Adicional */
+.aside {
+    float: right;
+    background-color: rgb(178, 152, 202);
+    width: 30%;
+    padding: 2rem;
+    height: 20vh;
+}
+
+.img-chica{
+    width: 14rem;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.footer_texto {
+    background-color: black;
+    color: rgb(236, 236, 236);
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.5rem;
+    clear: both;
+}
+
+
+.contacto_contenido {
+    margin: 1rem;
+    padding-bottom: 34%;
+    width: auto;
+    text-align: center;
+    display: center;
+}
+
+
+.contacto_input {
+    width: 100%;
+    display: block;
+    margin: 0.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.contactodiv {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.959);
+    padding-top: 2rem;
+    margin: 0rem 3rem 0rem 3rem;
+    font-size: 2rem;
+    display: flow;
+}
+
+.textoContacto {
+
+    text-align: center;
+    padding: 1rem;
+}
+
+.main_contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: inherit;
+}
+
+/*      Tamaño 1   576px    */
+
+/* Menu superior */
+
+@media(min-width: 576px) {
+
+    .menuSuperior {
+        background-color: #1d1c1c;
+        font-size: 2rem;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .menuSuperior li {
+        display: inline-block;
+    }
+
+    .menuSuperior a {
+        text-decoration: none;
+        font-weight: 200;
+        color: whitesmoke;
+    }
+
+    .TituloPrincipal {
+        text-align: center;
+        color: rgba(226, 226, 226, 0.959);
+        padding-top: 2rem;
+        font-size: 3rem;
+    }
+
+    /* Seccion */
+
+    .secciones {
+        margin: 2rem 1rem 2rem 1rem;
+    }
+
+
+    /* Seccion 1 */
+    .sección1 {
+        width: 90%;
+        float: left;
+        background: radial-gradient(circle, rgb(97, 95, 95) 0%, rgb(0, 0, 0) 100%, rgb(0, 0, 0) 100%);
+        margin: 3rem;
+        padding: 2rem;
+    }
+
+    .parraps {
+        text-align: center;
+        color: rgba(240, 243, 247, 0.63);
+        font-size: 1.2rem;
+    }
+
+    .CajitaSecciones {
+        text-align: center;
+    }
+
+    .CajitaSecciones li {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 1.7rem;
+        padding: 1rem;
+    }
+
+    /* Seccion Tintas */
+    .secciónTinta {
+        background: radial-gradient(circle, rgba(252, 252, 252, 0.849) 0%, rgb(19, 18, 18) 100%);
+        padding: 1rem;
+        width: auto;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 2rem;
+        height: 77vh;
+    }
+
+    .Imagenes_tintas {
+        padding: 3rem;
+        float: none;
+    }
+    
+    .Imagen_tinta {
+        padding: 1rem;
+        float: none;
+    }
+
+
+    /* Cartuchos */
+
+    .Cartuchos {
+        background: radial-gradient(circle, rgba(207, 204, 204, 0.849) 0%, rgb(0, 0, 0) 100%);
+        font-size: 2rem;
+        color: rgb(234, 235, 236);
+    }
+}
+
+/* Esto seria Informacion Adicional y footer*/
+.aside {
+    float: right;
+    background-color: rgb(162, 157, 167);
+    width: 100%;
+    padding: 1rem;
+    height: 11vh;
+    text-align: center;
+}
+
+.Titulocontacto {
+    padding: 1.2rem;
+}
+
+.Dire {
+    font-size: 1.2em;
+}
+
+.ig {
+    padding-top: 0.8rem;
+    font-size: 1.2em;
+}
+
+
+.footer {
+    background-color: black;
+    color: rgb(236, 236, 236);
+    text-align: center;
+    font-size: 1rem;
+    font-family: inherit;
+    clear: both;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+/*****************************************************************/
+
+/* Tamaño 2 */
+
+@media(min-width: 768px) {
+    .main_contenido {
+        /*  display: inline-block; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: inherit;
+
+    }
+
+    .secciones {
+        display: contents;
+    }
+
+    .secciónTinta {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .Cartuchos {
+        padding: 2rem;
+        float: right;
+    }
+
+    .secciónCartuchos {
+        padding-bottom: 2rem;
+    }
+
+    div {
+        display: inline-block;
+    }
+
+    .Imagenes_Cartuchos {
+        float: none;
+    }
+
+}
+
+/* Tamaño 3 */
+
+@media(min-width: 992px) {
+    div {
+        display: inline-block;
+    }
+
+    .sección.Cartuchos {
+        width: 96%;
+    }
+
+}
+
+@media(min-width: 1230px) {
+    .sección.Cartuchos {
+        width: fit-content;
+    }
+}
